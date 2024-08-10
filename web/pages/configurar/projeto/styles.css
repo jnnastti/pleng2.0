@@ -1,0 +1,123 @@
+body {
+  background-color: #F4F4F4;
+  color: #00525E;
+}
+
+main {
+  max-width: 1200px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1 {
+  margin-left: 10%;
+  margin-right: auto;
+}
+
+form {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  align-items: stretch;
+}
+
+.items {
+  width: 100%;
+  text-align: left;
+  display: flex;
+}
+
+.item {
+  width: 50%;
+}
+
+.item:first-child {
+  margin-right: 5%;
+}
+
+.layout label, .layout a {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  padding: 3px 2px;
+}
+
+.layout {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+  
+.layout input[type=radio] {
+  display: none;
+}
+  
+.layout label.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-bottom: 2px solid #00525E;
+  transition: background 0.4s;
+  padding-left: 0;
+}
+
+.layout input[type=radio]:checked + .page + label.nav {
+  background: #00525E;
+  color: #FEF9EF;
+}
+  
+.layout .page {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-column-end: span 3;
+  padding: 0px 45px 0 0;
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.layout .page .page-contents {
+  width: 100%;
+}
+  
+.layout input[type=radio] + .page {
+  transition: transform 0.2s;
+  transform: translateX(120%);
+}
+  
+.layout input[type=radio]:checked + .page {
+  transform: translateX(0%);
+}
+
+
+.buttons {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+
+.buttons a {
+  display: block;
+  margin-top: -20px;
+}
+
+.btnExcluir {
+  background-color: #FEF9EF;
+  color: #b80000;
+  border: 1px solid #b80000;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.btnExcluir:hover {
+  background-color: #e2e1df;
+}
+
+.modalDialog form {
+  width: 100%!important;
+}

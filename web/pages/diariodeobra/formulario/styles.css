@@ -1,0 +1,212 @@
+body {
+    background-color: #F4F4F4;
+    color: #00525E;
+}
+
+main {
+    max-width: 1200px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 70%;
+}
+
+.items {
+  width: 100%;
+  text-align: left;
+  display: flex;
+}
+
+.item {
+  width: 65%;
+}
+
+.item:first-child {
+  margin-right: 5%;
+  /* width: 30%; */
+}
+
+.item input[type='date'] {
+  padding: 10px 10px;
+}
+
+form button {
+  margin-top: 0px;
+}
+
+button:last-child {
+  margin-top: 10px;
+}
+
+
+.fieldtempo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 32% 17% 17% 17% 17%;
+  margin-top: 15px;
+}
+
+.fieldtempo label {
+  font-weight: bold;
+  width: 100%;
+}
+
+.etapas .items {
+  justify-content: space-between;
+}
+
+.etapas .item {
+  width: 45%;
+}
+
+.etapas .item input, .etapas .item .material {
+  padding: 12px 10px;
+}
+
+.etapas .item:first-child {
+  margin-right: 0;
+}
+
+.etapas button {
+  margin-top: 25px;
+}
+
+.etapas .lista {
+  border: 1px solid #00525E;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.etapas .lista .itemlista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.etapas .lista .itemlista label {
+  min-width: 100px;
+}
+
+.etapas .lista .itemlista label:nth-child(2), .etapas .lista .itemlista label:nth-child(3) {
+  text-align: center;
+}
+
+.etapas .lista .itemlista label:last-child {
+  min-width: 50px;
+  text-align: end;
+}
+
+.etapas .lista .itemlista:not(:first-child) {
+  border-top: 1px solid #00525E;
+  padding-top: 10px;
+}
+
+.etapas .lista .itemlista a {
+  text-decoration: none;
+  color: #00525E;
+  transition: all 0.5s ease;
+}
+
+.etapas .lista .itemlista a:hover {
+  color: #a50b0b;
+}
+
+.tabs {
+  padding: 10px 50px;
+  padding-bottom: 20px;
+  width: 80%;
+}
+
+.tabs input[name=tab-control] {
+  display: none;
+}
+
+.tabs ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.tabs ul li label {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tabs .slider {
+  position: relative;
+  width: 25%;
+  transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+}
+
+.tabs .slider .indicator {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 4px;
+  background: #00525E;
+  border-radius: 1px;
+}
+
+.tabs .content section {
+    display: none;
+    animation: content 0.3s ease-in-out;
+    animation-iteration-count: 1;
+    line-height: 1.4;
+}
+
+
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label {
+  cursor: default;
+  color: #00525E;
+}
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label svg {
+  fill: #00525E;
+}
+
+
+.tabs input[name=tab-control]:nth-of-type(1):checked ~ .slider {
+  transform: translateX(0%);
+}
+.tabs input[name=tab-control]:nth-of-type(1):checked ~ .content > section:nth-child(1) {
+  display: block;
+}
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ .slider {
+  transform: translateX(90%);
+}
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ .content > section:nth-child(2) {
+  display: block;
+}
+
+.tabs input[name=tab-control]:nth-of-type(3):checked ~ .slider {
+  transform: translateX(215%);
+}
+.tabs input[name=tab-control]:nth-of-type(3):checked ~ .content > section:nth-child(3) {
+  display: block;
+}
+.tabs input[name=tab-control]:nth-of-type(4):checked ~ .slider {
+  transform: translateX(305%);
+}
+.tabs input[name=tab-control]:nth-of-type(4):checked ~ .content > section:nth-child(4) {
+  display: block;
+}
+
+@keyframes content {
+  from {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

@@ -1,0 +1,138 @@
+body {
+    background-color: #F4F4F4;
+    color: #00525E;
+}
+
+main {
+    max-width: 1200px;
+    text-align: justify;
+}
+
+main h1 {
+    margin-left: 10%;
+}
+
+nav .fa {
+    display: block!important;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pesquisa form {
+    padding: 0;
+    background: none;
+    display: block;
+    margin-top: -55px;
+}
+
+.pesquisa button:first-child{
+    width: calc(100% + 20px);
+    height: 45px;
+    border: none;
+    background-color: #00A2B8;
+    border-radius: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+    color: #FEF9EF;
+} 
+
+.pesquisa button:first-child:hover {
+    background-color: #007D8D;
+}
+
+.pesquisa input {
+    margin: 0 5 0 20;
+    padding: 10;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #007D8D;
+    width: 90%;
+}
+
+.pesquisa div:last-child button {
+    border:none;
+    width: 24px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.pesquisa div:last-child button i {
+    color: #00A2B8;
+    transition: all 0.4s;
+}
+
+.pesquisa div:last-child button i:hover {
+    color: #007D8D;
+}
+
+.lista {
+  float: right;
+  background: #FEF9EF;
+}
+
+.lista .item  {
+  line-height: 50px;
+  border-bottom: 1px solid #007D8D;
+  padding: 0 20px;
+  margin: 0 30px;
+  width: 80%;
+}
+
+.lista .item h3 {
+    text-align: center;
+}
+
+.lista .item i {
+  margin-right: 10px;
+  width: 15px;
+}
+.lista .item i, .lista .item p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.folder {
+  float: left;
+  width: 170px;
+  height: 100px;
+  text-align: center;
+  margin: 15 5 50 5;
+}
+
+.folder i.fa-folder {
+  height: 110px;
+  width: 100%;
+  line-height: 100px;
+  margin: 0 auto;
+  font-size: 150px;
+  transition: 0.2s all ease-out;
+  cursor: pointer;
+  color: #007D8D;
+}
+
+.folder i.fa-folder:hover {
+    transform: rotateY(-28deg) rotateZ(-2deg) scale(1.02);
+    text-shadow: 13px 2px #00525E;
+}
+
+form {
+    width: 100%!important;
+}
+
+.items {
+    width: 100%;
+    text-align: left;
+    display: flex;
+  }
+  
+  .item {
+    width: 50%;
+  }
+  
+  .item:first-child {
+    margin-right: 5%;
+  }

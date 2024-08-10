@@ -1,0 +1,144 @@
+body {
+    background-color: #F4F4F4;
+    color: #00525E;
+}
+
+main {
+    max-width: 1200px;
+    text-align: justify;
+}
+
+main h1 {
+    margin-left: 10%;
+}
+
+main section:first-child {
+    margin-left: 170px;
+    margin-bottom: 50px;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pesquisa form {
+    padding: 0;
+    background: none;
+    display: block;
+    margin-top: -55px;
+    width: 100%!important;
+}
+
+.pesquisa button:first-child{
+    width: calc(100% + 20px);
+    height: 45px;
+    border: none;
+    background-color: #00A2B8;
+    border-radius: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+    color: #FEF9EF;
+}
+
+.pesquisa button:first-child:hover {
+    background-color: #007D8D;
+}
+
+.pesquisa select {
+    margin: 0 5 0 20;
+    padding: 10;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #007D8D;
+    width: 90%;
+    color: #007D8D;
+
+}
+
+.pesquisa div:last-child button {
+    border:none;
+    width: 24px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.pesquisa div:last-child button i {
+    color: #00A2B8;
+    transition: all 0.4s;
+}
+
+.pesquisa div:last-child button i:hover {
+    color: #007D8D;
+}
+
+.container section:last-child {
+    text-align: center;
+}
+
+.cont {
+    text-align: center;
+}
+
+.etapas {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.etapas a {
+    text-decoration: none;
+    color: #00525E;
+}
+.etapas div {
+    background-color: #FEF9EF;
+    padding: 20px 25px 30px 25px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(218, 218, 218, 0.65);
+    margin-bottom: 20px;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.etapas div:hover {
+    transform:translateZ(0) scale(1.01);
+    box-shadow: 0px 0px 5px 2px rgba(187, 187, 187, 0.65);
+
+}
+
+.etapas div span {
+    margin-top: 10px;
+    margin-left: 10;
+}
+
+.items {
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+
+.item {
+    width: 50%;
+}
+
+.item:first-child {
+    margin-right: 5%;
+}
+
+form {
+    width: 100%!important;
+}
+
+form .btnExcluir {
+    background-color: #FEF9EF;
+    color: #b81500;
+    border: 1px solid #b81500;
+}
+
+form .btnExcluir:hover {
+    background-color: #E1E5F2;
+}
