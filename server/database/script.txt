@@ -1,0 +1,12 @@
+
+-- Table: orcamento
+CREATE TABLE orcamento (
+    idorcamento INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+    idlevantamento INTEGER NOT NULL REFERENCES levantamento_inicial (idlevantamento), 
+    idmaterial INTEGER NOT NULL, 
+    qtde_comprada NUMERIC (9, 2) NOT NULL, 
+    qtde_faltante NUMERIC (9, 2) NOT NULL, 
+    fornecedor VARCHAR, data_compra DATE NOT NULL, 
+    valor_compra NUMERIC (9, 2) NOT NULL
+);
+

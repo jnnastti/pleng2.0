@@ -1,0 +1,167 @@
+body {
+    background-color: #F4F4F4;
+    color: #00525E;
+}
+
+main {
+    max-width: 1200px;
+    text-align: justify;
+}
+
+main h1 {
+    margin-left: 10%;
+}
+
+nav .fa {
+    display: block!important;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pesquisa form {
+    padding: 0;
+    background: none;
+    display: block;
+    width: 100%!important;
+}
+
+.pesquisa select {
+    margin: 0 5 0 20;
+    padding: 10;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #007D8D;
+    width: 90%;
+    color: #007D8D;
+}
+
+.pesquisa button {
+    border:none;
+    width: 24px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.pesquisa button i {
+    color: #00A2B8;
+    transition: all 0.4s;
+}
+
+.pesquisa button i:hover {
+    color: #007D8D;
+}
+
+.pesquisa button:hover {
+    background-color: transparent;
+}
+.item {
+    margin-bottom: 10px!important;
+}
+
+.orc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FEF9EF;
+    box-shadow: 0px 0px 5px 2px rgba(218, 218, 218, 0.65);
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.orc label {
+    cursor: pointer;
+
+}
+
+.orc div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.orc div button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.collapse {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+    border-radius: 0px 0px 10px 10px;
+    transition: height 0.8s;
+    width: calc(100% - 10px);
+    border: 1px solid #007D8D;
+    max-height: 140px;
+}
+
+.mat {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+}
+
+.mat .meio {
+    display: grid;
+    grid-template-columns: 20% 20% 30% 30%;
+    margin-bottom: 10px;
+}
+
+.mat button {
+    border-radius: 3px;
+    border: 0;
+    font-size: 10px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    background-color: #00A2B8;
+    color: #FEF9EF;
+    width: 20px;
+    height: 20px;
+}
+
+.mat button:hover {
+    background-color: #007D8D;
+}
+
+.mat .btnSecundario {
+    background-color: #FEF9EF;
+    color: #00A2B8;
+    border: 1px solid #00A2B8;
+}
+
+.mat .btnSecundario:hover {
+    background-color: #E1E5F2;
+}
+
+form {
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    align-items: stretch;
+    width: 100%!important;
+}
+  
+form .items {
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+  
+form .item {
+    width: 50%;
+    margin-bottom: 0px!important;
+}
+  
+form .item:first-child {
+    margin-right: 5%;
+}
+
+form button {
+    margin-top: 10px!important;
+}
