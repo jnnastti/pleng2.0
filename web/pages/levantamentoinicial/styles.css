@@ -1,0 +1,30 @@
+.items {
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+
+.item {
+    width: 45%;
+}
+
+.item:first-child {
+    margin-right: 10%;
+}
+
+form {
+    text-align: justify;
+}
+
+etapa {
+    margin-bottom: 30px;
+}
+
+.etapa form {
+    background-color: #E1E5F2;
+    padding: 15px;
+}
+
+.etapa form button {
+    margin-top: 10;
+}

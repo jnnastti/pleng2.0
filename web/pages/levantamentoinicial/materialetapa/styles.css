@@ -1,0 +1,65 @@
+
+main {
+    margin-left: 10%;
+}
+.etapa {
+    background-color: #E1E5F2;
+    padding: 10;
+    border-radius: 15px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.etapa h2, .etapa h3 {
+    text-align: center;
+}
+
+.etapa .desc {
+    margin-left: 5%;
+    margin-bottom: -20px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10;
+}
+
+table tr {
+    margin-bottom: 15px;
+}
+
+table tr td {
+    background:#F5F5F5;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+table tr .material {
+    justify-content: center;
+    display: flex; 
+    margin-left:5px;
+    margin-right: 5px
+}
+
+table tr .qtde {
+    width:25%;
+    text-align: center;
+}
+
+label input[type="checkbox"] {
+    display: none;
+}
+
+label h2 {
+	cursor: pointer;
+}
+
+.collapse {
+    height: 0px;
+    overflow: hidden;
+}
+
+input:checked + .collapse {
+    height: auto;
+}

@@ -1,0 +1,70 @@
+body {
+    background-image: url('../../assets/imgs/homebg.jpg');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 100%;
+    margin: -10;
+    padding-bottom: 10;
+}
+
+header img {
+    margin-top: 20px;
+    width: 80px;
+    margin-left: 90%;
+}
+
+.btn {
+    margin-bottom: -40px;
+}
+
+.btn .relatorio {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    width: 50%;
+}
+
+
+.relatorio {
+    padding: 20px 20px;
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    width: 85%;
+    box-shadow: 0px 5px 20px 5px rgba(170, 169, 169, 0.65);
+    margin-bottom: 30px;
+}
+
+.relatorio .field {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.relatorio .field label {
+    font-size: 16px;
+    padding: 30px 0px 8px 0px;
+    text-align: left;
+}
+
+.relatorio button {
+    height: 50px;
+    border-radius: 8px;
+    border: 0;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.relatorio .btnVerde {
+    background: #1F7A8C;
+    color: #f4f4f4;
+}
+
+.relatorio .btnVerde:hover {
+    background-color: #022B3A;
+}
