@@ -1,0 +1,34 @@
+button {
+    margin-bottom: -20;
+}
+
+.items {
+    width: 90%;
+    text-align: left;
+    display: flex;
+    margin-left: 10%;
+    margin-top: -10px;
+}
+
+.item {
+    width: 45%;
+}
+
+.item:first-child {
+    margin-right: 5%;
+}
+
+.item input {
+    width: 100%;
+}
+
+.item button {
+    width: 50px;
+    height: 50px;
+    margin-left: 30%;
+    text-align: -webkit-center;
+}
+
+form {
+    padding: 15px;
+}

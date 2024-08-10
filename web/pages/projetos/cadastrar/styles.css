@@ -1,0 +1,64 @@
+#page-cadastrarprojeto {
+    background-image: url('../../../assets/imgs/homebg.jpg');
+    background-position-x: center;
+    background-size: 100%;
+    margin: -10;
+    padding-bottom: 70;
+}
+
+.items {
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+
+.item {
+    width: 50%;
+}
+
+.item:first-child {
+    margin-right: 5%;
+}
+
+.cont {
+    margin-top: 40px;
+}
+
+form {
+    height: 550px;
+    padding: 0px;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.menulateral {
+    background-color: #022B3A;
+    position: absolute;
+    right: 85;
+    top: 240;
+    height: inherit;
+    border-radius: 0 10px 10px 0;
+    color: #E1E5F2;
+    padding-left: 40;
+}
+
+.menulateral .op {
+    text-align: left;
+    padding: 15 20 15 40;
+}
+
+.menulateral .op p {
+    width: 70%;
+    font-size: 12px;
+    margin-top: -15px;
+}
+
+.isHidden {
+    display: none;
+}
+
+.isActive {
+    background-color: #1F7A8C;
+    margin-left: -40px;
+    
+}

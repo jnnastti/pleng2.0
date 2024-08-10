@@ -1,0 +1,18 @@
+.items {
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+
+.item {
+    width: 45%;
+}
+
+.item:first-child {
+    margin-right: 10%;
+}
+
+form {
+    text-align: justify;
+}
+

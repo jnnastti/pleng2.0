@@ -1,0 +1,8 @@
+#page-perfilusuario {
+    background-image: url('../../assets/imgs/homebg.jpg');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 100%;
+    margin: -10;
+    padding-bottom: 160;
+}
