@@ -1,0 +1,42 @@
+button {
+    margin-bottom: -20;
+}
+
+
+.filtro {
+    padding: 10px;
+    box-shadow: 0px 5px 20px 5px rgba(214, 213, 213, 0.65);
+    margin-bottom: 50px;
+}
+
+.filtro h3 {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.items {
+    text-align: left;
+    display: flex;
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+.item:first-child {
+    width: 100%;
+}
+
+.item input {
+    width: 100%;
+}
+
+.item button {
+    width: 30px;
+    height: 30px;
+    margin-left: 20%;
+    text-align: -webkit-center;
+    margin-top: 5;
+}
+
+form {
+    padding: 15px;
+}
