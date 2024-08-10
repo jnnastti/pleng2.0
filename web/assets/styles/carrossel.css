@@ -1,0 +1,119 @@
+
+/* carrossel */
+.pleng {
+    display: grid!important;
+    align-items: center;
+    justify-items: center;
+}
+
+div#carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transform-style: preserve-3d;
+    perspective: 400px;
+    --items: 5;
+    --middle: 3;
+    --position: 3;
+}
+
+div.item {
+    position: absolute;
+    width: 230px;
+    height: 350px;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r)))translateX(calc(-200px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item p {
+    padding: 10px;
+}
+
+div.item:nth-of-type(1) {
+    --offset: 1;
+    background-color: #00A2B8;
+}
+div.item:nth-of-type(2) {
+    --offset: 2;
+    background-color: #007D8D;
+}
+div.item:nth-of-type(3) {
+    --offset: 3;
+    background-color: #00525E;
+}
+div.item:nth-of-type(4) {
+    --offset: 4;
+    background-color: #007D8D;
+}
+div.item:nth-of-type(5) {
+    --offset: 5;
+    background-color: #00A2B8;
+}
+
+div.item img {
+    width: 90%;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.hidden:nth-child(1):checked ~ div#carousel {
+    --position: 1;
+}
+
+.hidden:nth-child(3):checked ~ div#carousel {
+    --position: 2;
+}
+
+.hidden:nth-child(5):checked ~ div#carousel {
+    --position: 3;
+}
+
+.hidden:nth-child(7):checked ~ div#carousel {
+    --position: 4;
+}
+.hidden:nth-child(9):checked ~ div#carousel {
+    --position: 5;
+}
+
+.hidden {
+    display: none;
+}
+
+.circle {
+    border: 2px solid #FEF9EF;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    transition: all 300ms;
+    width: 20px;
+    margin-left: 215px;
+    margin-top: -35px;
+}
+
+.hidden:nth-child(1):checked + .entry .circle {
+    border-color: #FEF9EF;
+    background-color: #FEF9EF;
+}
+.hidden:nth-child(3):checked + .entry .circle {
+    border-color: #FEF9EF;
+    background-color: #FEF9EF;
+}
+.hidden:nth-child(5):checked + .entry .circle {
+    border-color: #FEF9EF;
+    background-color: #FEF9EF;
+}
+.hidden:nth-child(7):checked + .entry .circle {
+    border-color: #FEF9EF;
+    background-color: #FEF9EF;
+}
+.hidden:nth-child(9):checked + .entry .circle {
+    border-color: #FEF9EF;
+    background-color: #FEF9EF;
+}

@@ -1,0 +1,37 @@
+body {
+    background-color: #F4F4F4;
+    color: #00525E;
+}
+
+main {
+    max-width: 1200px;
+    text-align: justify;
+}
+
+main h1 {
+    margin-left: 10%;
+}
+
+
+.items {
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+
+.item {
+    width: 50%;
+}
+
+.item:first-child {
+    margin-right: 5%;
+}
+
+form {
+    width: 100%!important;
+}
+
+section:last-child {
+    margin-left: 150px;
+    text-align: center;
+}

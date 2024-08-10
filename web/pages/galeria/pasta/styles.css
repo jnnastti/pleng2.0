@@ -1,0 +1,181 @@
+body {
+    background-color: #F4F4F4;
+    color: #717f81;
+}
+
+main {
+    max-width: 1200px;
+    text-align: justify;
+}
+
+main h1 {
+    margin-left: 10%;
+}
+
+nav {
+    position: fixed;
+    height: 100%;
+    background-color: #FEF9EF;
+    top: 0;
+    left: 0;
+    color: #00525E;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: -webkit-center;
+    box-shadow: 0px 0px 10px 5px rgba(218, 218, 218, 0.65);
+    width: 130px;
+}
+
+
+nav .seta {
+    text-decoration:none;
+    color: #00525E;
+    transition: all 0.5s;
+}
+
+nav .seta:hover {
+    margin-right: 20px;
+}
+
+nav h1 {
+    transform: rotate(270deg);
+    position: relative;
+    top: calc(50% - 20px);
+}
+
+nav div {
+    position: absolute;
+    bottom: 50;
+    width: 125px;
+}
+
+nav div button {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    margin-top: 50px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+nav div .btnEditar {
+    background-color: #00A2B8;
+    color: #FEF9EF;
+    border: 0;
+}
+
+nav div .btnEditar:hover {
+    background-color: #007D8D;
+}
+
+nav div .btnAdicionar {
+    background-color: #FEF9EF;
+    color: #00A2B8;
+    border: 1px solid #00A2B8;
+}
+
+nav div .btnAdicionar:hover {
+    background-color: #E1E5F2;
+}
+
+nav div .btnExcluir {
+    background-color: #FEF9EF;
+    color: #b80000;
+    border: 1px solid #b80000;
+}
+
+nav div .btnExcluir:hover {
+    background-color: #f2e1e1;
+}
+
+.byebye {
+    opacity: 0;
+  }
+  .byebye:hover {
+    transform: scale(0.2) !important;
+  }
+  
+.gallery {
+    width: 85%;
+    margin-left: 10%;
+    display: grid;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    grid-auto-rows: 8px;
+}
+
+.gallery .content {
+    position: relative;
+    max-width: 200px;
+}
+
+.gallery img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 16px #333;
+    transition: all 1.5s ease;
+}
+
+.gallery img:hover {
+    box-shadow: 0 0 32px #333;
+}
+
+.gallery .gallery-item {
+    transition: grid-row-start 300ms linear;
+    transition: transform 300ms ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    max-width: 200px;
+}
+
+.gallery .gallery-item:hover {
+    transform: scale(1.025);
+}
+
+form {
+    width: 100%!important;
+}
+
+.items {
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+  
+.item {
+    width: 50%;
+}
+  
+.item:first-child {
+    margin-right: 5%;
+}
+
+#editarFotoModal > div{
+    width: 750px;
+}
+  
+#editarFotoModal img {
+    max-width: 300px;
+}
+
+#editarFotoModal input[type='date'] {
+    padding: 10px;
+}
+
+
+#editarFotoModal .btnExcluir {
+    background-color: #FEF9EF;
+    color: #b80000;
+    border: 1px solid #b80000;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+#editarFotoModal .btnExcluir:hover {
+    color: #660707;
+    background-color: #dad9d8;
+}

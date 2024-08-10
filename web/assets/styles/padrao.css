@@ -1,0 +1,19 @@
+/* // https://coolors.co/00525e-007d8d-00a2b8-f4f4f4-fef9ef-ffeedd */
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Archivo Narrow', sans-serif;;
+}
+
+p {
+  line-height: 22px;
+}
+
+p, button, input, label, body, a, span {
+    font-family: 'Archivo', sans-serif;
+}
+
+body {
+    color: #FEF9EF;
+    overflow-x: hidden;
+}
